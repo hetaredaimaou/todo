@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: aquamarine;
+  height: 90px;
+}
+
+header h1 {
+  float: left;
+  padding-left: 20px;
+}
+
+.header-btn a {
+  display: block;
+  float: right;
+  color: white;
+  background-color: green;
+  box-shadow: 0 3px black;
+  margin: 20px 100px;
+  padding: 0 25px;
+}
+
+.header-btn a:active {
+  position: relative;
+  top: 3px;
+  color: white;
+  background-color: green;
+  box-shadow: none;
+}
+
+main {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#app {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: green;
+}
