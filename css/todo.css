@@ -1,3 +1,12 @@
+/* * {
+  outline: 1px solid black;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -5,21 +14,24 @@ a {
 header {
   background-color: aquamarine;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  position: sticky;
+  top: 0;
 }
 
-header h1 {
-  float: left;
-  padding-left: 20px;
+.header-btn {
+  display: flex;
+  gap: 1rem;
 }
 
 .header-btn a {
-  display: block;
-  float: right;
+  padding: 0 25px;
   color: white;
   background-color: green;
   box-shadow: 0 3px black;
-  margin: 20px 100px;
-  padding: 0 25px;
 }
 
 .header-btn a:active {
@@ -38,7 +50,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: calc(100dvh - 90px);
+  overflow-y: scroll;
 }
 
 #app {
@@ -47,6 +60,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: calc(100dvh - 90px);
 }
 
 ul {

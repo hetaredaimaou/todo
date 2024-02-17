@@ -1,16 +1,20 @@
 function addTask() {
-  var taskInput = document.getElementById("taskInput");
-  var taskList = document.getElementById("taskList");
-
+  const taskInput = document.getElementById("taskInput");
+  const taskList = document.getElementById("taskList");
+  
   if (taskInput.value !== "") {
-    var li = document.createElement("li");
+    const li = document.createElement("li");
     li.textContent = taskInput.value;
     taskList.appendChild(li);
     taskInput.value = "";
-
+    
     // タスクをクリックしたら完了状態にする
     li.addEventListener("click", function () {
       li.classList.toggle("completed");
     });
   }
 }
+
+window.addEventListener('load', () => {
+  document.getElementById('add-btn').addEventListener('click', addTask)
+})
